@@ -1,0 +1,387 @@
+/*1. Cajas principales*/
+/*
+html{
+    width: 1200px;
+}*/
+
+body{
+    width: 96.666666666666666666666666666667%;
+    margin: 0 auto;
+}
+
+header {
+    width: 96.55172413793103%;                          /* 1120/1160 */
+    padding: 1.25rem 1.7241379310344827586206896551724%; /* 20px arriba/abajo, 20px izq/der en % */
+    height: 80px;   /* alto total: 120px (80 + 20 + 20) */
+}
+
+nav {
+    width: 96.55172413793103%;                          /* 1120/1160 */
+    padding: 0.625rem 1.7241379310344827586206896551724%; /* 10px arriba/abajo, 20px izq/der en % */
+    height: 40px;   /* alto total: 60px (40 + 10 + 10) */
+}
+
+#sectionPrincipal {
+    width: 96.55172413793103%;                          /* 1120/1160 */
+    padding: 1.25rem 1.7241379310344827586206896551724%; /* 20px arriba/abajo, 20px izq/der en % */
+    height: 310px;  /* alto total: 350px (310 + 20 + 20) */
+}
+
+#sectionInferior {
+    width: 98.275862068965517241379310344828%;           /* 1140/1160 */
+    padding: 0.9375rem 0 0.9375rem 1.7241379310344827586206896551724%;
+    /* 15px arriba, 0 der, 15px abajo, 20px izq en % */
+    height: 747px;  /* alto total: 777px (747 + 15 + 15) */
+}
+
+footer {
+    width: 96.55172413793103%;                          /* 1120/1160 */
+    padding: 1.25rem 1.7241379310344827586206896551724%; /* 20px arriba/abajo, 20px izq/der en % */
+    height: 40px;   /* alto total: 80px (40 + 20 + 20) */
+    text-align: center;
+}
+
+/*2. Elementos del header*/
+
+#cajaTexto{
+    width: 60%;    /* antes 300px */
+    max-width: 300px;   /* nunca más de 300px */
+    height: 80px;
+    float: left;
+}
+
+#cajaImagen{
+    width: 35%;    /* antes 170px */
+    max-width: 170px;   /* nunca más de 170px */
+    height: 80px;
+    float: right;
+}
+
+/*3. Elementos del NAV*/
+
+nav a{
+    float: left;
+    width: 120px;
+    padding: 10px 0px 0px 0px;
+    height: 30px; /*alto total: 40px*/
+    text-align: center;
+    margin: 0px 50px;
+}
+
+/*4. Section principal*/
+
+#imagenPrincipal{
+    width: 560px;
+    height: 310px;
+}
+
+#bloqueTexto{
+    box-sizing: border-box;
+    width: 540px; /*ancho total: 540px*/
+    padding: 5px 20px;
+    border: 1px solid black;
+    height: 300px; /*alto total: 310px*/
+}
+/*
+#sectionPrincipal div:first-child{
+    margin: 0px 20px 0px 0px;
+}*/
+
+/*5. Section inferior*/
+
+#cajaFormulario{
+    width: 428px; /*ancho total: 470px*/
+    padding: 0px 20px;
+    border: 1px solid black;
+    margin: 0px 20px 0px 0px;
+}
+
+#bloqueSecundario{
+    width: 440px; /*ancho total: 470px*/
+    padding: 0px 15px;
+    height: 747px; /*alto total: 747px*/
+}
+
+/*6. Elementos del formulario*/
+
+form select{
+    box-sizing: border-box;
+    width: 422px;
+    padding: 0px 10px;
+    border: 1px solid black;
+    height: 60px;
+    margin: 0px 0px 30px 0px;
+}
+
+#fecha{
+    box-sizing: border-box;
+    width: 230px;
+    padding: 0px 10px;
+    border: 1px solid black;
+    height: 60px;
+    margin: 0px 0px 16px 0px;
+}
+
+
+#personas{
+    box-sizing: border-box;
+    width: 142px;
+    padding: 0px 10px;
+    border: 1px solid black;
+    height: 60px;
+    margin: 0px 0px 16px 0px;
+}
+
+form textarea{
+    box-sizing: border-box;
+    width: 422px;
+    padding: 0px 10px;
+    border: 1px solid black;
+    height: 60px;
+    margin: 0px 0px 16px 0px;    
+}
+
+form input[type="submit"]{
+    box-sizing: border-box;
+    width: 422px;
+    border: 1px solid black;
+    height: 60px;
+    margin: 0px 0px 16px 0px;
+}
+
+/*7. Imagen secundaria y lista*/
+
+#imagenSecundaria{
+    width: 100%;
+    height: 411px;
+}
+
+#listaVentajas{
+    
+    padding: 0px 25px;
+    height: 311px;
+    margin: 25px 0px 0px 0px;
+    overflow: hidden;
+}
+
+/*8. Elementos tipográficos*/
+
+/*
+Regular: 400 - normal
+Semibold: 600
+Bold: 700 - bold (bolder ≠ bold. bold es siempre 700 (valor absoluto) y bolder es relativo al padre)
+*/
+
+header h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+header h2{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+nav a{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#sectionPrincipal h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#sectionPrincipal p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+form h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#listaVentajas h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+form label{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+form input, form select, form textarea{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+form input[type="submit"]{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+ul{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/*9. Colores de fondo de todas las cajas*/
+
+body, #sectionPrincipal, #sectionInferior, #cajaFormulario, form select, form input, form textarea{
+    /*background-color: #FFFFFF;*/
+    background-color: #ccdaee;
+}
+
+header{
+    background-color: #205A82;
+}
+
+nav{
+    background-color: #5AAFE0;
+}
+
+nav a:active{
+    background-color: #07579B;
+}
+
+/*comprobar si cambia algo o no*/
+nav a{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#bloqueTexto{
+    background-color: #E5F2FC;
+}
+
+form h2{
+    background-color: #DCECF9;
+}
+
+form input[type="submit"]{
+    background-color: #2D9B48;
+    color: #FFFFFF;
+}
+
+#listaVentajas{
+    background-color: #E8F4E9;
+}
+
+footer{
+    background-color: #205A82;
+}
+
+header, nav, footer{
+    color: #FFFFFF;
+}
+
+/*lógica de posicionamiento*/
+
+img{
+    display: block;
+}
+
+header div{
+    display: inline-block;
+    vertical-align: top;
+}
+
+header h1, header h2, footer p{
+    margin: 0px;
+}
+
+footer p{
+    line-height: 40px;
+}
+
+#sectionPrincipal div{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#bloqueTexto{
+    float: right;
+}
+
+#cajaImagen img, #imagenPrincipal img, #imagenSecundaria img{
+    width: 100%;
+    height: auto;
+}
+
+#sectionInferior > div{ /*solo los que directamente son hijos, NO los de dentro de ellos incluidos*/
+    float: left;
+}
+
+form label{
+    display: block;
+}
+
+form select, form textarea, form input{
+    display: block;
+}
+
+form div {
+    float: left;
+}
+
+form div:nth-of-type(1) { /*fecha*/
+    width: 230px;
+    margin: 0px 50px 0px 0px;
+}
+
+form div:nth-of-type(2) { /*personas*/
+    width: 142px;
+}
+
+footer {
+    clear: both;
+
+    /*position: sticky;
+    bottom: 0;*/
+
+    /*position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;*/
+}
+/*
+body{
+    position: relative;
+}
+*/
+@media (width < 960px) {
+    nav a {
+        margin: 0 20px;   /* 120 + 40 = 160px por enlace → 640px total */
+    }
+}
+@media (width < 700px) {
+    nav a {
+        font-size: 0.8em;
+        width: auto; /* el ancho se ajusta al texto */
+        padding: 10px 15px 0 15px;
+    }
+}
+
+@media (width < 510px) {
+    nav a {
+        padding: 10px 5px 0 5px;
+    }
+}
+
+@media (width < 430px) {
+    nav a {
+        padding: 10px 0 0 0;
+    }
+}
+
+@media (width < 390px) {
+    nav a {
+        font-size: 0.7em;
+    }
+}
